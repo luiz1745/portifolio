@@ -28,9 +28,17 @@ div{
     text-align: center;
 }
 footer{
-    color:white;
+    
     text-align: center;
-    font-style: italic;
+    color:black;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 180px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+    height: 50px;
+    margin: 20px;
+    
 }
 section#redes-sociais img {
     
