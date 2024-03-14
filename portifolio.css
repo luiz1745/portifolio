@@ -21,15 +21,9 @@ button:hover{
     background-color: #656ff5;
 }
 
-section{
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin:auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
 
-}
+
+
 div{
     text-align: center;
 }
@@ -40,7 +34,18 @@ footer{
 }
 section#redes-sociais img {
     
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin:auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
     width:60px ;
     height: 60px;
     margin: 15px;
+}
+section#portifolio img{
+    width:700px ;
+    height: 400px;
+    
 }
