@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luiz Alcântara - Portfólio</title>
+  <title>Luiz Alcântara - Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --header-bg: #2d2d2d;
+      --primary: #1abc9c;
+      --icon-color: #2d2d2d;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #1e1e1e;
+      --text-color: #f0f0f0;
+      --header-bg: #111;
+      --primary: #1abc9c;
+      --icon-color: #f0f0f0;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -15,13 +31,14 @@
 
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       text-align: center;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     header {
-      background-color: #2d2d2d;
+      background-color: var(--header-bg);
       color: white;
       padding: 20px;
     }
@@ -41,7 +58,21 @@
     }
 
     nav a:hover {
-      color: #1abc9c;
+      color: var(--primary);
+    }
+
+    .lang-theme {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px;
+    }
+
+    .lang-theme button {
+      border: none;
+      cursor: pointer;
+      background: none;
+      font-size: 24px;
     }
 
     .section {
@@ -50,7 +81,7 @@
     }
 
     .intro {
-      background-color: #1abc9c;
+      background-color: var(--primary);
       color: white;
     }
 
@@ -61,7 +92,7 @@
     }
 
     .btn {
-      background-color: #333;
+      background-color: var(--header-bg);
       color: white;
       padding: 10px 20px;
       border: none;
@@ -85,7 +116,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      background: #2d2d2d;
+      background: var(--header-bg);
       color: white;
     }
 
@@ -105,12 +136,12 @@
     .skills-icons i {
       font-size: 40px;
       transition: transform 0.3s ease, color 0.3s ease;
-      color: #2d2d2d;
+      color: var(--icon-color);
     }
 
     .skills-icons i:hover {
       transform: scale(1.2);
-      color: #1abc9c;
+      color: var(--primary);
     }
 
     @media (max-width: 600px) {
@@ -120,21 +151,26 @@
     }
   </style>
 </head>
-<body>
+<body data-theme="dark">
   <header>
-    <h1>Luiz Alcântara</h1>
+    <h1 data-en="Luiz Alcântara" data-pt="Luiz Alcântara">Luiz Alcântara</h1>
+    <div class="lang-theme">
+      <button onclick="setLang('pt')">🇧🇷</button>
+      <button onclick="setLang('en')">🇺🇸</button>
+      <button onclick="toggleTheme()">🌓</button>
+    </div>
     <nav>
-      <a href="#sobre">Sobre mim</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#projetos">Projetos</a>
+      <a href="#sobre" data-en="About me" data-pt="Sobre mim">About me</a>
+      <a href="#habilidades" data-en="Skills" data-pt="Habilidades">Skills</a>
+      
     </nav>
   </header>
 
   <section class="section intro">
     <img src="C:\Users\User\Desktop\trabalhos\portifolio\WhatsApp Image 2025-06-29 at 10.34.45.jpeg" alt="">
-    <h2>Luiz Alcântara</h2>
-    <p>Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia</p>
-    <a href="#contato" class="btn">Contato</a>
+    <h2 data-en="Luiz Alcântara" data-pt="Luiz Alcântara">Luiz Alcântara</h2>
+    <p data-en="IT Technician | Future Systems Analyst | Technology Enthusiast" data-pt="Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia">IT Technician | Future Systems Analyst | Technology Enthusiast</p>
+    <a href="#contato" class="btn" data-en="Contact" data-pt="Contato">Contact</a>
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/luiz-alcantara-3a49012a0/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://www.youtube.com/@luizalcantara7384" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -142,22 +178,25 @@
   </section>
 
   <section id="sobre" class="section">
-    <h2>Sobre mim</h2>
-    <p>Sou o Luiz, técnico em redes e estudante de Sistemas de Informação. Tenho paixão por tecnologia desde criança e sempre busquei entender como as coisas funcionam no mundo digital.</p>
-    <p>Atualmente trabalho com suporte e infraestrutura, mas estou migrando para a área de segurança cibernética, onde pretendo me especializar. Me considero curioso, autodidata e determinado a crescer profissionalmente e ajudar outras pessoas com meu conhecimento.</p>
+    <h2 data-en="About me" data-pt="Sobre mim">About me</h2>
+    <p data-en="I'm Luiz, a network technician and Information Systems student. I've been passionate about technology since I was a child and always sought to understand how things work in the digital world."
+       data-pt="Sou o Luiz, técnico em redes e estudante de Sistemas de Informação. Tenho paixão por tecnologia desde criança e sempre busquei entender como as coisas funcionam no mundo digital.">I'm Luiz...</p>
+    <p data-en="I currently work with support and infrastructure, but I'm transitioning into cybersecurity, where I plan to specialize. I'm curious, self-taught, and determined to grow professionally and help others with my knowledge."
+       data-pt="Atualmente trabalho com suporte e infraestrutura, mas estou migrando para a área de segurança cibernética, onde pretendo me especializar. Me considero curioso, autodidata e determinado a crescer profissionalmente e ajudar outras pessoas com meu conhecimento.">
+       I currently work...</p>
   </section>
 
   <section id="habilidades" class="section">
-    <h2>Habilidades</h2>
+    <h2 data-en="Skills" data-pt="Habilidades">Skills</h2>
     <ul>
-      <li>Redes de computadores</li>
-      <li>Python e Análise de Dados</li>
-      <li>Linux e Segurança da Informação</li>
-      <li>Power BI e Dashboards</li>
-      <li>HTML, CSS e JavaScript</li>
+      <li data-en="Computer Networks" data-pt="Redes de computadores">Computer Networks</li>
+      <li data-en="Python and Data Analysis" data-pt="Python e Análise de Dados">Python and Data Analysis</li>
+      <li data-en="Linux and Cybersecurity" data-pt="Linux e Segurança da Informação">Linux and Cybersecurity</li>
+      <li data-en="Power BI and Dashboards" data-pt="Power BI e Dashboards">Power BI and Dashboards</li>
+      <li data-en="HTML, CSS and JavaScript" data-pt="HTML, CSS e JavaScript">HTML, CSS and JavaScript</li>
     </ul>
     <div class="skills-icons">
-      <i class="fas fa-network-wired" title="Redes"></i>
+      <i class="fas fa-network-wired" title="Networks"></i>
       <i class="fab fa-python" title="Python"></i>
       <i class="fab fa-linux" title="Linux"></i>
       <i class="fas fa-chart-bar" title="Power BI"></i>
@@ -167,8 +206,24 @@
     </div>
   </section>
 
+  
+
   <footer>
-    <p>&copy; 2025 Luiz Alcântara. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Luiz Alcântara. All rights reserved.</p>
   </footer>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerText = el.getAttribute(`data-${lang}`);
+      });
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      const current = body.getAttribute('data-theme');
+      body.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+  </script>
 </body>
 </html>
