@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌎</text></svg>">
+  <title>Luiz Alcântara - Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Mesmos estilos que você já tinha */
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --header-bg: #2d2d2d;
+      --primary: #1abc9c;
+      --icon-color: #2d2d2d;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #1e1e1e;
+      --text-color: #f0f0f0;
+      --header-bg: #111;
+      --primary: #1abc9c;
+      --icon-color: #f0f0f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .lang-theme {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px;
+    }
+
+    .lang-theme button {
+      border: none;
+      cursor: pointer;
+      background: none;
+      font-size: 24px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .intro {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .intro img {
+      width: 150px;
+      border-radius: 50%;
+      margin: 20px auto;
+    }
+
+    .btn {
+      background-color: var(--header-bg);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--header-bg);
+      color: white;
+    }
+
+    ul {
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .skills-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .skills-icons i {
+      font-size: 40px;
+      transition: transform 0.3s ease, color 0.3s ease;
+      color: var(--icon-color);
+    }
+
+    .skills-icons i:hover {
+      transform: scale(1.2);
+      color: var(--primary);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <header>
+    <h1>Luiz Alcântara</h1>
+    <div class="lang-theme">
+      <button onclick="setLang('pt')">🇧🇷</button>
+      <button onclick="setLang('en')">🇺🇸</button>
+      <button onclick="toggleTheme()">🌓</button>
+    </div>
+    <nav>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#habilidades">Habilidades</a>
+    </nav>
+  </header>
+
+  <section class="section intro" id="sobre">
+    <img src="C:\Users\User\Desktop\trabalhos\portifolio\.4D4D10EF-3604-46CC-A842-0B345CC620E4.jpeg.jpeg" alt="">
+    <h2>Luiz Alcântara</h2>
+    <p>Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia</p>
+    <a href="#contato" class="btn">Contato</a>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/luiz-alcantara-3a49012a0/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@luizalcantara7384" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>Sou o Luiz, técnico em redes e estudante de Sistemas de Informação. Tenho paixão por tecnologia desde criança e sempre busquei entender como as coisas funcionam no mundo digital.</p>
+    <p>Atualmente trabalho com suporte e infraestrutura, mas estou migrando para a área de segurança cibernética, onde pretendo me especializar. Me considero curioso, autodidata e determinado a crescer profissionalmente e ajudar outras pessoas com meu conhecimento.</p>
+  </section>
+
+  <section id="habilidades" class="section">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Redes de computadores</li>
+      <li>Python e Análise de Dados</li>
+      <li>Linux e Segurança da Informação</li>
+      <li>Power BI e Dashboards</li>
+      <li>HTML, CSS e JavaScript</li>
+    </ul>
+    <div class="skills-icons">
+      <i class="fas fa-network-wired" title="Redes"></i>
+      <i class="fab fa-python" title="Python"></i>
+      <i class="fab fa-linux" title="Linux"></i>
+      <i class="fas fa-chart-bar" title="Power BI"></i>
+      <i class="fab fa-html5" title="HTML5"></i>
+      <i class="fab fa-css3-alt" title="CSS3"></i>
+      <i class="fab fa-js" title="JavaScript"></i>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Luiz Alcântara. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      const texts = {
+        pt: {
+          "Luiz Alcântara": "Luiz Alcântara",
+          "Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia": "Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia",
+          "Contato": "Contato",
+          "Sobre mim": "Sobre mim",
+          "Habilidades": "Habilidades"
+        },
+        en: {
+          "Luiz Alcântara": "Luiz Alcântara",
+          "Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia": "IT Technician | Future Systems Analyst | Technology Enthusiast",
+          "Contato": "Contact",
+          "Sobre mim": "About me",
+          "Habilidades": "Skills"
+        }
+      };
+
+      document.querySelectorAll('[data-theme] h1, h2, p, a.btn, nav a').forEach(el => {
+        const original = el.innerText;
+        if (texts[lang][original]) {
+          el.innerText = texts[lang][original];
+        }
+      });
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      const current = body.getAttribute('data-theme');
+      body.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+  </script>
+</body>
+</html>
