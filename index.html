@@ -205,37 +205,51 @@
   </footer>
 
   <script>
-    function setLang(lang) {
-      const texts = {
-        pt: {
-          "Luiz Alcântara": "Luiz Alcântara",
-          "Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia": "Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia",
-          "Contato": "Contato",
-          "Sobre mim": "Sobre mim",
-          "Habilidades": "Habilidades"
-        },
-        en: {
-          "Luiz Alcântara": "Luiz Alcântara",
-          "Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia": "IT Technician | Future Systems Analyst | Technology Enthusiast",
-          "Contato": "Contact",
-          "Sobre mim": "About me",
-          "Habilidades": "Skills"
-        }
-      };
+  function setLang(lang) {
+    const texts = {
+      pt: {
+        "Luiz Alcântara": "Luiz Alcântara",
+        "Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia": "Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia",
+        "Contato": "Contato",
+        "Sobre mim": "Sobre mim",
+        "Habilidades": "Habilidades",
+        "Sou o Luiz, técnico em redes e estudante de Sistemas de Informação. Tenho paixão por tecnologia desde criança e sempre busquei entender como as coisas funcionam no mundo digital.": "Sou o Luiz, técnico em redes e estudante de Sistemas de Informação. Tenho paixão por tecnologia desde criança e sempre busquei entender como as coisas funcionam no mundo digital.",
+        "Atualmente trabalho com suporte e infraestrutura, mas estou migrando para a área de segurança cibernética, onde pretendo me especializar. Me considero curioso, autodidata e determinado a crescer profissionalmente e ajudar outras pessoas com meu conhecimento.": "Atualmente trabalho com suporte e infraestrutura, mas estou migrando para a área de segurança cibernética, onde pretendo me especializar. Me considero curioso, autodidata e determinado a crescer profissionalmente e ajudar outras pessoas com meu conhecimento.",
+        "Redes de computadores": "Redes de computadores",
+        "Python e Análise de Dados": "Python e Análise de Dados",
+        "Linux e Segurança da Informação": "Linux e Segurança da Informação",
+        "Power BI e Dashboards": "Power BI e Dashboards",
+        "HTML, CSS e JavaScript": "HTML, CSS e JavaScript"
+      },
+      en: {
+        "Luiz Alcântara": "Luiz Alcântara",
+        "Técnico de Informática | Futuro Analista de Sistemas | Apaixonado por tecnologia": "IT Technician | Future Systems Analyst | Technology Enthusiast",
+        "Contato": "Contact",
+        "Sobre mim": "About me",
+        "Habilidades": "Skills",
+        "Sou o Luiz, técnico em redes e estudante de Sistemas de Informação. Tenho paixão por tecnologia desde criança e sempre busquei entender como as coisas funcionam no mundo digital.": "I'm Luiz, a network technician and Information Systems student. I've been passionate about technology since I was a kid and always curious about how things work in the digital world.",
+        "Atualmente trabalho com suporte e infraestrutura, mas estou migrando para a área de segurança cibernética, onde pretendo me especializar. Me considero curioso, autodidata e determinado a crescer profissionalmente e ajudar outras pessoas com meu conhecimento.": "Currently, I work with IT support and infrastructure, but I'm transitioning to cybersecurity, where I plan to specialize. I'm curious, self-taught, and determined to grow professionally and help others with my knowledge.",
+        "Redes de computadores": "Computer Networks",
+        "Python e Análise de Dados": "Python and Data Analysis",
+        "Linux e Segurança da Informação": "Linux and Information Security",
+        "Power BI e Dashboards": "Power BI and Dashboards",
+        "HTML, CSS e JavaScript": "HTML, CSS and JavaScript"
+      }
+    };
 
-      document.querySelectorAll('[data-theme] h1, h2, p, a.btn, nav a').forEach(el => {
-        const original = el.innerText;
-        if (texts[lang][original]) {
-          el.innerText = texts[lang][original];
-        }
-      });
-    }
+    document.querySelectorAll('h1, h2, p, a.btn, nav a, li').forEach(el => {
+      const original = el.innerText.trim();
+      if (texts[lang][original]) {
+        el.innerText = texts[lang][original];
+      }
+    });
+  }
 
-    function toggleTheme() {
-      const body = document.body;
-      const current = body.getAttribute('data-theme');
-      body.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
-    }
-  </script>
+  function toggleTheme() {
+    const body = document.body;
+    const current = body.getAttribute('data-theme');
+    body.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+  }
+</script>
 </body>
 </html>
