@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fundo branco */
+    color: #000000; /* Texto preto */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #000000; /* Preto */
+    color: #ffffff; /* Branco */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.buttons {
+    margin: 10px 0;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+.theme-toggle {
+    background: #ffffff; /* Branco no modo claro */
+    color: #000000; /* Preto */
+}
+
+body.dark .theme-toggle {
+    background: #ff6347; /* Vermelho no modo escuro */
+    color: #ffffff; /* Branco */
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Branco */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Vermelho */
+}
+
+section {
+    padding: 20px 0;
+    margin: 10px 0;
+    background: #ffffff; /* Branco */
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+body.dark section {
+    background: #444444; /* Cinza escuro */
+}
+
+h2 {
+    color: #000000; /* Preto */
+}
+
+.habilidades-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.habilidade {
+    position: relative;
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #000000; /* Preto */
+    transition: transform 0.3s;
+}
+
+.habilidade:hover {
+    transform: scale(1.1);
+}
+
+.habilidade i {
+    color: #000000; /* Preto */
+}
+
+body.dark .habilidade i {
+    color: #ff6347; /* Vermelho no modo escuro */
+}
+
+.descricao {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000000; /* Preto */
+    color: #ffffff; /* Branco */
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 12px; /* Tamanho da fonte reduzido */
+}
+
+.habilidade:hover .descricao {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff6347; /* Vermelho */
+}
+
+form button {
+    padding: 10px;
+    background: #000000; /* Preto no modo claro */
+    color: #ffffff; /* Branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+body.dark form button {
+    background: #ff6347; /* Vermelho no modo escuro */
+}
+
+form button:hover {
+    background: #d9534f; /* Vermelho mais escuro ao passar o mouse */
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 40px; /* Tamanho do ícone */
+    color: #000000; /* Preto */
+    transition: color 0.3s;
+}
+
+body.dark .social-button {
+    color: #ff6347; /* Vermelho no modo escuro */
+}
+
+.social-button:hover {
+    color: #d9534f; /* Vermelho mais escuro ao passar o mouse */
+}
+
+.profile-icon {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 50%; /* Mantém a proporção da imagem */
+    border-radius: 70%; /* Faz a imagem ficar redonda */
+    margin-bottom: 10px; /* Espaço entre a imagem e o nome */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #000000; /* Preto */
+    color: #ffffff; /* Branco */
+}
