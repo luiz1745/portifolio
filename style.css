@@ -3,9 +3,9 @@
 }
 
 .avatar {
-    width: 100px; 
+    width: 150px; 
     height: auto; 
-    border-radius: 50%; 
+    border-radius: 100%; 
     display: block; 
     margin: 0 auto 20px; 
 }
