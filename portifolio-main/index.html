@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Luiz Alcântara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Botão de Tema no canto superior esquerdo -->
+            <div class="theme-button-container">
+                <button id="theme-toggle" class="theme-toggle" title="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+
+            <!-- Seletor de Idiomas com Bandeiras -->
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="pt" title="Português">
+                    <img src="Flag_of_Brazil.svg.webp" alt="Português" class="flag-icon">
+                </button>
+                <button class="lang-btn" data-lang="en" title="English">
+                    <img src="Flag_of_the_United_States.svg" alt="English" class="flag-icon">
+                </button>
+                <button class="lang-btn" data-lang="es" title="Español">
+                    <img src="espanha.png" alt="Español" class="flag-icon">
+                </button>
+                <button class="lang-btn" data-lang="ru" title="Русский">
+                    <img src="Flag_of_Russia.svg.png" alt="Русский" class="flag-icon">
+                </button>
+            </div>
+
+            <!-- Ícone de perfil - Aomine Daiki -->
+            <img src="aomine.jpeg" alt="Ícone de perfil - Aomine Daiki" class="avatar">
+            <h1 data-i18n="nome">Luiz Alcântara</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre" data-i18n="nav.sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades" data-i18n="nav.habilidades">Habilidades</a></li>
+                    <li><a href="#certificados" data-i18n="nav.certificados">Certificados</a></li>
+                    <li><a href="#projetos" data-i18n="nav.projetos">Projetos</a></li>
+                    <li><a href="#contato" data-i18n="nav.contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2 data-i18n="sobre.titulo">Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p data-i18n="sobre.texto1">🌍 Uma jornada que atravessa fronteiras — literalmente.</p>
+                    
+                    <p data-i18n="sobre.texto2">Comecei como <strong>Técnico em Redes no Tribunal Regional Eleitoral de São Paulo (TRE-SP)</strong>, onde vivenciei a importância de infraestruturas robustas para o funcionamento da democracia. Depois, cursei <strong>Análise e Desenvolvimento de Sistemas na Universidade Mackenzie</strong>, unindo o conhecimento de infraestrutura ao desenvolvimento de soluções.</p>
+                    
+                    <p data-i18n="sobre.texto3">Buscando aprofundar minha visão sobre segurança, obtive certificações em <strong>LGPD e em Segurança Ofensiva pela Solyd</strong> — áreas que considero fundamentais para construir sistemas realmente completos.</p>
+                    
+                    <p data-i18n="sobre.texto4">O passo mais ousado foi mudar para <strong>São Petersburgo</strong>, onde atualmente estudo na <strong>Gorny Universitet</strong>. Essa experiência vai muito além da sala de aula: é a oportunidade de mergulhar em uma nova cultura, aprender com abordagens diferentes e, claro, desenvolver meu russo — que se soma ao português nativo, espanhol e inglês.</p>
+                    
+                    <p data-i18n="sobre.texto5">Hoje, meu grande diferencial é essa <strong>visão global e integrada</strong>: entendo de redes, de desenvolvimento e de segurança, e ainda posso atuar em equipes multiculturais graças aos idiomas. Acredito que tecnologia de ponta se constrói com técnica, mas também com capacidade de dialogar com o mundo.</p>
+                </div>
+                
+                <div class="idiomas-badge">
+                    <span class="badge"><i class="fas fa-globe"></i> Português (Nativo)</span>
+                    <span class="badge"><i class="fas fa-globe"></i> Inglês (Avançado)</span>
+                    <span class="badge"><i class="fas fa-globe"></i> Espanhol (Avançado)</span>
+                    <span class="badge"><i class="fas fa-globe"></i> Russo (Intermediário)</span>
+                </div>
+            </div>
+            
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/luiz-alcantara-3a49012a0/" target="_blank" class="social-button" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@luizalcantara7384" target="_blank" class="social-button" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://github.com/luiz1745" target="_blank" class="social-button" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container">
+            <h2 data-i18n="habilidades.titulo">Habilidades</h2>
+            <div class="habilidades-grid">
+                <div class="habilidade">
+                    <i class="fab fa-python"></i>
+                    <span class="descricao" data-i18n="habilidades.python">Python: Automação e análise de dados</span>
+                </div>
+                <div class="habilidade">
+                    <i class="fab fa-linux"></i>
+                    <span class="descricao" data-i18n="habilidades.linux">Linux: Administração de sistemas</span>
+                </div>
+                <div class="habilidade">
+                    <i class="fas fa-network-wired"></i>
+                    <span class="descricao" data-i18n="habilidades.redes">Redes: Configuração e gerenciamento</span>
+                </div>
+                <div class="habilidade">
+                    <i class="fab fa-html5"></i>
+                    <span class="descricao" data-i18n="habilidades.html">HTML5: Estruturação de páginas</span>
+                </div>
+                <div class="habilidade">
+                    <i class="fab fa-css3"></i>
+                    <span class="descricao" data-i18n="habilidades.css">CSS3: Estilização avançada</span>
+                </div>
+                <div class="habilidade">
+                    <i class="fab fa-js"></i>
+                    <span class="descricao" data-i18n="habilidades.js">JavaScript: Interatividade</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificados">
+        <div class="container">
+            <h2 data-i18n="certificados.titulo">Certificações</h2>
+            <div class="certificados-grid">
+                <div class="certificado-card">
+                    <div class="certificado-imagem">
+                        <img src="lgpd.png" alt="Certificação LGPD">
+                    </div>
+                    <div class="certificado-info">
+                        <h3 data-i18n="certificados.lgpd">LGPD - Lei Geral de Proteção de Dados</h3>
+                        <p data-i18n="certificados.lgpd-desc">Certificação em conformidade com a Lei Geral de Proteção de Dados</p>
+                        <span class="certificado-data">2022</span>
+                    </div>
+                </div>
+
+                <div class="certificado-card">
+                    <div class="certificado-imagem">
+                        <img src="Captura de tela de 2026-02-20 22-56-26.png" alt="Certificação Segurança Ofensiva">
+                    </div>
+                    <div class="certificado-info">
+                        <h3 data-i18n="certificados.seguranca">Segurança Ofensiva - Solyd</h3>
+                        <p data-i18n="certificados.seguranca-desc">Certificação em técnicas avançadas de segurança ofensiva e ethical hacking</p>
+                        <span class="certificado-data">2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container">
+            <h2 data-i18n="projetos.titulo">Meus Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3 data-i18n="projetos.iphones">Loja de iPhones</h3>
+                    <p data-i18n="projetos.iphones-desc">Site institucional para loja de iPhones, com design moderno, responsivo e foco em conversão. Desenvolvido com HTML, CSS e JavaScript puro.</p>
+                    <a href="https://luiz1745.github.io/site-jelzemar/" target="_blank" class="projeto-link">
+                        <span data-i18n="projetos.ver">Ver Projeto</span> <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="projeto-card">
+                    <i class="fas fa-robot"></i>
+                    <h3 data-i18n="projetos.embreve">Em Breve</h3>
+                    <p data-i18n="projetos.embreve-desc">Novo projeto em desenvolvimento. Em breve mais novidades!</p>
+                    <span class="projeto-link" style="opacity: 0.5; cursor: not-allowed;" data-i18n="projetos.embreve-label">Em Breve</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2 data-i18n="contato.titulo">Contato</h2>
+            <form id="contact-form" action="https://formspree.io/f/mzzgnppq" method="POST">
+                <input type="text" id="name" name="name" data-i18n-placeholder="contato.nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" name="email" data-i18n-placeholder="contato.email" placeholder="Seu E-mail" required>
+                <textarea id="message" name="message" data-i18n-placeholder="contato.mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" data-i18n="contato.enviar">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Luiz Alcântara. <span data-i18n="footer.direitos">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
